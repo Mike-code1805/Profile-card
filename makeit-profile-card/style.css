@@ -1,0 +1,123 @@
+/*Pseudo-class that selects the root element of a tree that represents the document*/
+:root {
+    --primary: hsl(185, 75%, 39%);
+    --secondary: hsl(229, 23%, 23%);
+    --thirty: hsl(227, 10%, 46%);
+    --dark: hsl(0, 0%, 59%);
+    --font-primary: 'Kumbh Sans', sans-serif;
+}
+
+/*It can be used to select any and all types of elements in an HTML page*/
+*{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Body*/
+body {
+    
+    font-family: var(--font-primary);
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/*class card of section*/
+.card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden; /*this property indicates whether to clip content, draw scroll bars, or display excess content in an element*/
+}
+
+/*class card-background of Victor's image*/
+.card-background {
+    background-image: url("/images/bg-pattern-card.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 120px;
+}
+
+/*Image Properties of Victor*/
+.card-image {
+    border-radius: 50%;
+    bottom: -50px;
+    position : absolute; 
+    border: 5px solid white;    
+}
+
+/*To name, age and city*/
+.card-body{
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Properties especific to name, age and city*/
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Properties especific to name and age*/
+.card-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Properties especific to name*/
+.name {
+    color: var(--secondary);
+    font-size: 18px;
+    margin-right: 0.5rem;
+}
+
+/*Properties especific to age*/
+.age{
+    color: var(--dark);
+}
+
+/*Properties especific to city*/
+.city{
+    color: var(--dark);
+}
+
+/*Properties number of followers*/
+.counter{
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+/*General properties of followers, likes and photos */
+.card-stadistics{
+    padding: 2rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Properties number of photos*/
+.stadistics-container{
+    color: var(--thirty);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Properties to split the image*/
+.divider{
+    color: var(--dark);
+}
